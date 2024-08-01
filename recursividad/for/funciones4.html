@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS Boostrap -->
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css?a=8">
+	<title>Piramides</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var num_pisos = 10;
+
+		//A
+		for (var i = 0; i < num_pisos; i++) {
+        	var piso = "";
+
+        	for (var j = 0; j < i + 1; j++) {
+        		piso = piso + "*";
+        	}
+        	document.write(piso+"<br>");
+    	}
+
+    	document.write("<br>");
+
+    	//B
+    	for (var i = 0; i < num_pisos; i++) {
+        	var piso = "";
+        	
+        	for (var j = 0; j < num_pisos - i; j++) {
+        		piso = piso + "*";
+        	}
+        	document.write(piso+"<br>");
+    	}
+
+    	document.write("<br>");
+
+    	//C
+    	for (var i = 0; i < num_pisos; i++) {
+        	var piso = "";
+        	
+        	for (var j = 10; j < num_pisos + i; j++) {
+        		piso = piso + "&nbsp&nbsp";
+        	}
+
+        	for (j = 0; j < num_pisos - i; j++) {
+        		piso = piso + "*";
+        	}
+        	document.write(piso+"<br>");
+    	}
+
+    	document.write("<br>");
+
+    	//D
+		for (var i = 0; i < num_pisos; i++) {
+        	var piso = "";
+
+        	for (var j = 1; j < num_pisos - i; j++) {
+        		piso = piso + "&nbsp&nbsp";
+        	}
+    
+        	for (j = 0; j < i + 1; j++) {
+        		piso = piso + "*";
+        	}
+        	document.write(piso+"<br>");
+    	}
+		// setTimeout(function(){
+		// window.location.href="../index.php";
+		// },5000);
+	</script>
+
+	<br><br><a href="../recursividad.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

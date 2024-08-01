@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS Boostrap y Estilo -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css?a=8">
+	<title>Ejercicio 35</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var suma=0;
+		var suma_elevados=0;
+		var elevado=0;
+		var num=0; 
+
+		numero=new Array(20);
+
+		for (var i=0; i<numero.length; i++) {
+			num=(Math.random()*20+1)
+			numero[i]=num
+			suma+=numero[i]
+		}
+		document.write("La suma de los valores de los elementos del arreglo es "+suma+"<br>")
+		var promedio=suma/20
+		document.write("El promedio de los elementos del arreglo es "+promedio+"<br>")
+
+		for (var i=0; i<numero.length; i++) {
+			elevado=Math.pow(numero[i]-promedio, 2)
+			suma_elevados+=elevado
+		}
+
+		var varianza=suma_elevados/20
+		document.write("La varianza de los elementos del arreglo es "+varianza+"<br>")
+		var desviacion_estandar=Math.sqrt(varianza);
+		document.write("La desviación estándar del arreglo es "+desviacion_estandar+"<br>")
+
+		var repeticion=0;
+		var moda=0;
+		for (var i =0; i<numero.length; i++) {
+			var contador=0;
+			for (var j=0; j <numero.length; j++) {
+				if (numero[i]==numero[j]) {
+					contador++
+				}
+				
+			}
+			if (contador>repeticion) {
+				moda=numero[i]
+				repeticion=contador
+			}
+		}
+		document.write("La moda del arreglo es "+moda)
+
+	</script>
+
+	<br><br><a href="arreglos.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

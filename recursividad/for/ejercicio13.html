@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS Boostrap -->
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css?a=8">
+	<title>Articulos</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var pag_todo = 0;
+
+		var artic = parseInt(prompt("Ingresa la cantidad de articulos: "));
+
+		for (var i = 1; i <= artic; i++) {
+			var precio = parseFloat(prompt("Ingresa el precio: "));
+			var desc = precio * 0.1;
+
+			if (precio >= 200) {
+				desc = precio * 0.15;
+
+				if(precio > 100 && precio <200)
+					desc = precio * 0.12;
+				var costo = precio - desc;
+				pag_todo = pag_todo + costo;
+
+				document.write("Producto "+i+"<br>"+"Costo: "+costo+"<br>"+"Descuento: "+desc+"<br>");
+			}
+			document.write("Pago por todo: "+pag_todo+"<br>"+"<br>");
+		}
+		// setTimeout(function(){
+		// window.location.href="../index.php";
+		// },5000);
+	</script>
+
+	<br><br><a href="../recursividad.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS Boostrap -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css?a=8">
+	<title>Ejercicio 7</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		var clave = parseInt(prompt("Clave del producto: "));
+
+		if(clave < 1 && clave >= 7) {
+			document.write("Clave incorrecta ");
+		} else {
+
+			var materiap = parseFloat(prompt("Materia prima: "));
+			var manoobra = parseFloat(prompt("Mano de aobra: "));
+			var gfab = parseFloat(prompt("Gastos de fabricación: "));
+
+			var costop = 0;
+			var pventa = 0;
+			var matpagreg = 0;
+			var gfabagreg = 0;
+
+			if(clave == 3 || clave == 4) {
+				matpagreg = materiap * 0.75;
+			} else if(clave == 1 || clave == 5) {
+				matpagreg = materiap * 0.80;
+			} else {
+				matpagreg = materiap * 0.85;
+			}
+
+			if(clave == 2 || clave == 5) {
+				gfabagreg =  gfab * 0.30;
+			} else if(clave == 3 || clave == 6) {
+				gfabagreg =  gfab * 0.35;
+			} else {
+				gfabagreg =  gfab * 0.28;
+			}
+
+			costop = matpagreg + manoobra + gfabagreg;
+			pventa = costop + (costop * 0.45);
+
+			document.write("Costos de produccción: $"+costop+"<br>");
+			document.write("Precio de venta: $"+pventa)
+		}
+
+		// setTimeout(function(){
+		// window.location.href="../index.php";
+		// },5000);
+	</script>
+
+	<br><br><a href="seleccion.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

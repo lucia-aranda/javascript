@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS Boostrap -->
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css?a=8">
+	<title>Asteriscos</title>
+</head>
+<body>
+	<script type="text/javascript">
+		for (var lineas = 3; lineas <= 9; lineas++) {
+			if (lineas % 2 != 0) {
+				document.write(lineas+". |&nbsp");
+				for (var aster = 1; aster <= lineas; aster++) {
+					document.write("*");
+				}
+				document.write("<br>");
+			} else {
+				document.write("&nbsp&nbsp&nbsp&nbsp|"+"<br>");
+			}
+		}
+		document.write("&nbsp&nbsp&nbsp&nbsp|&nbsp____________");
+
+		// setTimeout(function(){
+		// window.location.href="../index.php";
+		// },5000);
+	</script>
+
+	<br><br><a href="../recursividad.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- #include <stdio.h>
+int naster,nlineas,i;
+int main(void){
+    for(nlineas=3;nlineas<=9;nlineas++){
+        if(nlineas%2!=0){
+            printf("%d.|",nlineas);
+            for(naster=1;naster<=nlineas;naster++)
+                printf("*");
+            printf("\n");
+        }
+        else
+            printf("  |\n");
+    }
+    
+} -->

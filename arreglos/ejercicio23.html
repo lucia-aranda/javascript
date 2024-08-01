@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS Boostrap y Estilo -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css?a=8">
+    <title>Ejercicio 23</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+
+        
+        
+        var cv = 0;
+        let clave=[111,222,333,444];
+        var stock=[20,24,30,25];
+        var precio=[10,20,9,15];
+
+        
+        do{
+        var r = prompt("Seleccione lo que quiere realizar a continuacion: \nA) Venta de un producto \nB) Rebastecimiento \nC) Actualizar precio \nD) Informar sobre un producto \nE) Salir ");
+
+
+            if(r!="B" && r!="C" && r!="D" && r!="E"){
+                cv = parseInt(prompt("Ingrese la clave del producto que desea ingresar las ventas:"));
+                for (let i = 0; i < clave.length; i++) {
+                  if(clave[i] == cv){
+                  var cant_v = parseInt(prompt("Ingrese la cantidad de ventas realizadas al producto de la clave: "+ cv));
+                  if(cant_v <= stock [i]){
+                    stock[i] = stock[i] - cant_v;
+                    alert("Su stock es: "+stock[i]);
+                  } else {
+                    alert("La cantidad de ventas ingresada es mayor al stock, intenta nuevamente.");
+                  }
+                }
+                }
+            }
+
+
+            if(r!="A" && r!="C" && r!="D" && r!="E"){
+                cv = parseInt(prompt("Ingrese la clave del producto que desea reabastecer las ventas:"));
+                for (let i = 0; i < clave.length; i++) {
+                  if(clave[i] == cv){
+                  var cant_c = parseInt(prompt("Ingrese la cantidad comprada para el producto de clave: "+ cv));
+                  if(cant_c > 0){
+                    stock[i] = stock[i] + cant_c;
+                    alert("Su stock es: "+stock[i]);
+                  } else {
+                    alert("La cantidad comprada no es válida, intente nuevamente.");
+                  }
+                }
+                }
+            } 
+
+
+            if(r!="A" && r!="B" && r!="D" && r!="E"){
+                cv = parseInt(prompt("Ingrese la clave del producto que desea actualizar el precio:"));
+                for (let i = 0; i < clave.length; i++) {
+                  if(clave[i] == cv){
+                  var cant_p = parseFloat(prompt("Ingrese el porcentaje de aumento del producto de clave: "+ cv));
+                    var pc = (precio[i] * cant_p)/100;
+                    precio[i] = precio[i] + pc;
+                    alert("El precio actual del producto de clave: "+clave[i]+", es: "+precio[i]);
+                }
+                }
+            } 
+
+
+            if(r!="A" && r!="C" && r!="B" && r!="E"){
+                cv = parseInt(prompt("Ingrese la clave del producto que desea informar:"));
+                for (let i = 0; i < clave.length; i++) {
+                  if(clave[i] == cv){
+                    alert("La informacion actual del producto de clave: "+clave[i]+", es que su precio es "+
+                     precio[i]+" y tiene un stock de "+stock[i]);
+                }
+                }
+            } 
+
+
+        } while(r!="E") 
+        
+
+     
+    </script>
+    
+    <br><br><a href="arreglos.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

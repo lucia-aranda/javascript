@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- CSS Boostrap -->
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css?a=8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejercicio24</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		var capital_depositado =parseFloat(prompt("Ingrese el valor del capital depositado"));
+		var tasa_de_interes =parseFloat(prompt("Ingrese el valor de la tasa de intereses"));
+		var tiempo=parseFloat(prompt("Ingrese el valor de tiempo"));
+		var monto=Math.pow(1.0+tasa_de_interes/100,tiempo)*capital_depositado;
+		var interes_compuesto=monto-capital_depositado;
+
+	
+	    alert("Valor de interes compuesto: " + interes_compuesto);
+
+
+         
+
+	</script>
+	<br><br><a href="basicos.php"><button type="button" class="btn btn-success">Regresar</button></a>
+	
+
+</body>
+</html>

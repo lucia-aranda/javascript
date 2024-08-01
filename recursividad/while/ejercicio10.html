@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS Boostrap -->
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css?a=8">
+	<title>Cantidad de números</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var cant_numeros = parseInt(prompt("Ingresa la cantidad de números a analizar: "));
+		var i = 1;
+		var numero = 0;
+		var cero = 0;
+
+		while (i <= cant_numeros) {
+			numero = parseInt(prompt("Ingresa un número: "));
+			if (numero == 0) {
+				cero = cero + 1;
+			}
+			i = i + 1;
+		}
+		document.write("Números iguales a cero: "+cero);
+	</script>
+
+	<br><br><a href="../recursividad.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

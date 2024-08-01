@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS Boostrap -->
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css?a=8">
+	<title>Ahorro</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var i=1;
+		var suma=0;
+		while(i<=12){
+			var ahorro=parseFloat(prompt("Ingresa el deposito del mes "+i+":"));
+			suma=suma+ahorro;
+			document.write("El ahorro acumulado hasta el mes "+i+" es: $"+suma+"<br>");
+
+			i++;
+		}
+		document.write("El ahorro de todo el año es: $"+suma);
+
+		// setTimeout(function(){
+		// window.location.href="../index.php";
+		// },5000);
+	</script>
+
+	<br><br><a href="../recursividad.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

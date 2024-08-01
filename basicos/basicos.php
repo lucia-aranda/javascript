@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS Boostrap y Estilo -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css?a=8">
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css?a=8">
+  	<!-- Icons de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  	<!-- Fonts de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<title>Basicos</title>
+<head></head>
+<body>
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a href="../index.php"><img src="../img/logo.png" width="100px" align="center"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse espaciado" id="navbarNavAltMarkup">
+      <div class="navbar-nav espaciado">
+        <a class="nav-link" href="../index.php">Inicio</a>
+        <a class="nav-link" href="basicos.php">Ejercicios Basicos</a>
+        <a class="nav-link" href="../recursividad/recursividad.php">Ejercicios de Recursividad</a>
+        <a class="nav-link" href="../seleccion/seleccion.php">Ejercicios de Selección</a>
+        <a class="nav-link" href="../arreglos/arreglos.php">Ejercicios de Arreglos</a>
+        <a class="nav-link" href="../nosotros.php">Nuestro equipo</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+	<h1 class="color margen">Basicos</h1>
+	<hr size="10px">
+	<div class="grid">
+		<a href="ejercicio1.html"><button type="button" class="btn btn-success">Ejercicio 1</button></a>
+		<a href="ejercicio2.html"><button type="button" class="btn btn-success">Ejercicio 2</button></a>
+		<a href="ejercicio3.html"><button type="button" class="btn btn-success">Ejercicio 3</button></a>
+		<a href="ejercicio4.html"><button type="button" class="btn btn-success">Ejercicio 4</button></a>
+		<a href="ejercicio5.html"><button type="button" class="btn btn-success">Ejercicio 5</button></a>
+		<a href="ejercicio6.html"><button type="button" class="btn btn-success">Ejercicio 6</button></a>
+		<a href="ejercicio7.html"><button type="button" class="btn btn-success">Ejercicio 7</button></a>
+		<a href="ejercicio8.html"><button type="button" class="btn btn-success">Ejercicio 8</button></a>
+		<a href="ejercicio9.html"><button type="button" class="btn btn-success">Ejercicio 9</button></a>
+		<a href="ejercicio10.html"><button type="button" class="btn btn-success">Ejercicio 10</button></a>
+		<a href="ejercicio11.html"><button type="button" class="btn btn-success">Ejercicio 11</button></a>
+		<a href="ejercicio12.html"><button type="button" class="btn btn-success">Ejercicio 12</button></a>
+		<a href="ejercicio13.html"><button type="button" class="btn btn-success">Ejercicio 13</button></a>
+		<a href="ejercicio14.html"><button type="button" class="btn btn-success">Ejercicio 14</button></a>
+		<a href="ejercicio15.html"><button type="button" class="btn btn-success">Ejercicio 15</button></a>
+		<a href="ejercicio16.html"><button type="button" class="btn btn-success">Ejercicio 16</button></a>
+		<a href="ejercicio17.html"><button type="button" class="btn btn-success">Ejercicio 17</button></a>
+		<a href="ejercicio18.html"><button type="button" class="btn btn-success">Ejercicio 18</button></a>
+		<a href="ejercicio19.html"><button type="button" class="btn btn-success">Ejercicio 19</button></a>
+		<a href="ejercicio20.html"><button type="button" class="btn btn-success">Ejercicio 20</button></a>
+		<a href="ejercicio21.html"><button type="button" class="btn btn-success">Ejercicio 21</button></a>
+		<a href="ejercicio22.html"><button type="button" class="btn btn-success">Ejercicio 22</button></a>
+		<a href="ejercicio23.html"><button type="button" class="btn btn-success">Ejercicio 23</button></a>
+		<a href="ejercicio24.html"><button type="button" class="btn btn-success">Ejercicio 24</button></a>
+		<a href="ejercicio25.html"><button type="button" class="btn btn-success">Ejercicio 25</button></a>
+		<a href="ejercicio26.html"><button type="button" class="btn btn-success">Ejercicio 26</button></a>
+		<a href="ejercicio27.html"><button type="button" class="btn btn-success">Ejercicio 27</button></a>
+		<a href="ejercicio28.html"><button type="button" class="btn btn-success">Ejercicio 28</button></a>
+		<a href="ejercicio29.html"><button type="button" class="btn btn-success">Ejercicio 29</button></a>
+		<a href="ejercicio30.html"><button type="button" class="btn btn-success">Ejercicio 30</button></a>
+		<a href="ejercicio31.html"><button type="button" class="btn btn-success">Ejercicio 31</button></a>
+		<a href="ejercicio32.html"><button type="button" class="btn btn-success">Ejercicio 32</button></a>
+		<a href="ejercicio33.html"><button type="button" class="btn btn-success">Ejercicio 33</button></a>
+		<a href="ejercicio34.html"><button type="button" class="btn btn-success">Ejercicio 34</button></a>
+		<a href="ejercicio35.html"><button type="button" class="btn btn-success">Ejercicio 35</button></a>
+		<a href="ejercicio36.html"><button type="button" class="btn btn-success">Ejercicio 36</button></a>
+		<a href="ejercicio37.html"><button type="button" class="btn btn-success">Ejercicio 37</button></a>
+		<a href="ejercicio38.html"><button type="button" class="btn btn-success">Ejercicio 38</button></a>
+		<a href="ejercicio39.html"><button type="button" class="btn btn-success">Ejercicio 39</button></a>
+		<a href="ejercicio40.html"><button type="button" class="btn btn-success">Ejercicio 40</button></a>
+	</div>
+	
+    
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS Boostrap -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css?a=8">
+	<title>Ejercicio 2</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var costot = parseFloat(prompt("Costo original del traje: "));
+		var costof = 0;
+		var desc = 0;
+
+		if(costot > 2500) {
+			desc = costot * 0.15;
+			costof = costot - desc;
+		} else {
+			desc = costot * 0.08;
+			costof = costot - desc;
+		}
+		document.write("Cantidad a pagar sin descuento: "+costot+"<br>");
+		document.write("Cantidad de descuento: "+desc+"<br>");
+		document.write("Cantidad a pagar total: "+costof);
+
+		// setTimeout(function(){
+		// window.location.href="../index.php";
+		// },5000);
+	</script>
+
+	<br><br><a href="seleccion.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

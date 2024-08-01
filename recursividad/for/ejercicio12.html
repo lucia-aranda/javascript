@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS Boostrap -->
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css?a=8">
+	<title>Ahorro en un año</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var ahorro = 0;
+
+		var ingreso = parseInt(prompt("Ingrese la cantidad de su ahorro en centavos: "));
+
+		for (var anio = 1; anio <= 365; anio++) {
+			ahorro = Math.pow(ingreso,anio);
+			var pesos = ahorro / 100;
+			document.write("El ahorro en el dia "+anio+" es de: $"+pesos+"<br>");
+		}
+		document.write("<br>"+"La cantidad ahorrada en un año es de: $"+pesos);
+
+		// setTimeout(function(){
+		// window.location.href="../index.php";
+		// },5000);
+	</script>
+
+	<br><br><a href="../recursividad.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

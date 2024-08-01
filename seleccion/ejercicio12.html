@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS Boostrap -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css?a=8">
+	<title>Ejercicio 12</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		var poliza = prompt("Para cobertura amplia, presione A."+"\n"+"Para cobertura daños a terceros, presione B."+"\n"+"Las letras para indicar el tipo de póliza deben ser mayúsculas.");
+
+		var poliza_a = 1200;
+		var poliza_b = 950;
+		var npoliza_a = 0;
+		var npoliza_b = 0;
+		var alcohola = 0;
+		var alcoholb = 0;
+		var lentesa = 0;
+		var lentesb = 0;
+		var enfermedada = 0;
+		var enfermedadb = 0;
+
+		if(poliza != "A"&& poliza != "B") {
+			document.write("Opción no válida");
+		} else {
+			var palc = parseInt(prompt("Si la persona se encuentra alcoholizada, presione 1, si no es así, presione 2."));
+
+			if(palc == 1) {
+				alcohola = poliza_a * 0.10;
+				alcoholb = poliza_b * 0.10;
+			} else {
+				alcohola = 0;
+				alcoholb = 0;
+			}
+
+			var lentes = parseInt(prompt("Si la persona usa lentes, presione 1, si no es así, presione 2."))
+			if(lentes == 1) {
+				lentesa = poliza_a * 0.05;
+				lentesb = poliza_b * 0.05;
+			} else {
+				lentesa = 0;
+				lentesb = 0;
+			}
+
+			var enfermedad = parseInt(prompt("Si la persona padece de una enfermedad como lo es una deficiencia cardíaca o diabetes y si la persona tiene más de 40 años, presione 1, de lo contrario, presione 2. "));
+
+			if(enfermedad == 1) {
+				enfermedada = poliza_a * 0.20;
+				enfermedadb = poliza_b * 0.20; 
+			} else {
+				enfermedada = poliza_a * 0.10;
+				enfermedadb = poliza_b * 0.10;
+			}
+
+			if(poliza == "A") {
+				npoliza_a = poliza_a + alcohola + lentesa + enfermedada;
+				document.write("Total a pagar por todos los conceptos por una póliza A: $"+npoliza_a)
+			} else {
+				npoliza_b = poliza_b + alcoholb + lentesb + enfermedadb;
+				document.write("Total a pagar por todos los conceptos por una poliza B: $"+npoliza_b);
+			}
+
+			
+		}
+
+		// setTimeout(function(){
+		// window.location.href="../index.php";
+		// },5000);
+
+	</script>
+
+	<br><br><a href="seleccion.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

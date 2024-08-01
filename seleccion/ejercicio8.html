@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS Boostrap -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css?a=9">
+	<title>Ejercicio 8</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		var horas = parseInt(prompt("Cantidad de horas: "));
+		var total = 0;
+		var dif = 0;
+
+
+		if(horas > 0) {
+				if(horas <= 2) {
+				total = horas * 5;
+				document.write("Total a pagar por "+horas+" : $"+total);
+			} else if(horas <= 5) {
+				dif = horas - 2;
+				total = 10 + (dif * 4);
+				document.write("Total a pagar por "+horas+" : $"+total);
+			} else if(horas <= 10) {
+				dif = horas - 5;
+				total = 22 + (dif * 3);
+				document.write("Total a pagar por "+horas+" : $"+total);
+			} else {
+				total = horas * 2;
+				document.write("Total a pagar por "+horas+" : $"+total);
+			}
+		} else {
+			document.write("Cantidad de horas no válida");
+		}
+		
+		// setTimeout(function(){
+		// window.location.href="../index.php";
+		// },5000);
+
+	</script>
+
+	<br><br><a href="seleccion.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS Boostrap -->
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css?a=8">
+	<title>Banco "Bandido de Peluche"</title>
+</head>
+<body>
+	<script type="text/javascript">
+        var ganan_por_intere = 0;
+
+        var cli = parseInt(prompt("Ingresa la cantidad de clientes: "));
+
+        for (var i = 1; i <= cli; i++) {
+        	var compr_realizad = parseFloat(prompt("Ingresa las compras realizadas: "));
+        	var pag_dep_cort_ant = parseFloat(prompt("Ingresa el pago que deposito en el corte anterior: "));
+        	var sald_ant = parseFloat(prompt("Ingresa el saldo anterior: "));
+
+        	if (sald_ant * 0.15 > pag_dep_cort_ant) {
+        		var intere = sald_ant * 0.12;
+        		var multa = 200;
+        	} else {
+        		intere = 0;
+        		multa = 0;
+        	}
+
+        	var sald_act = sald_ant + compr_realizad - pag_dep_cort_ant + intere + multa;
+        	var pag_min = sald_act * 0.15;
+        	var pag_no_intereses = sald_act * 0.85;
+        	ganan_por_intere = ganan_por_intere + intere;
+
+        	document.write("Saldo actual: "+sald_act+"<br>"+"Pago minimo: "+pag_min+"<br>"+"Pago para no generar intereses: "+pag_no_intereses+"<br>");
+        }
+        document.write("Ganancia por intereses: "+ganan_por_intere);
+
+		// setTimeout(function(){
+		// window.location.href="../index.php";
+		// },5000);
+	</script>
+
+	<br><br><a href="../recursividad.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

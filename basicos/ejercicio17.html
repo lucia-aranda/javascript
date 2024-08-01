@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- CSS Boostrap -->
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css?a=8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejercicio 17</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		var min = parseFloat(prompt("Ingrese una cantidad en minutos: "));
+		var seg = parseFloat(prompt("Ingrese una cantidad en segundos: "));
+		var cen = parseFloat(prompt("Ingrese una cantidad en centesimas: "));
+		var dis = parseFloat(prompt("Ingrese una cantidad en distancia: "));
+
+		var tiemseg = min*60+seg+cen/100;
+		var veloms = dis/tiemseg;
+		var velokm = veloms*3.6;
+
+		alert("La velocidad en km/hr es: "+velokm);
+
+	</script>
+	<br><br><a href="basicos.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

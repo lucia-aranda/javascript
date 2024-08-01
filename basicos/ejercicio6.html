@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS Boostrap -->
+   <link rel="stylesheet" type="text/css" href="../css/bootstrap.css?a=8">
+	<title>Ejercicio 6</title>
+</head>
+<body>
+  	<script type="text/javascript">
+  	     var nombre_dino= prompt("Ingrese un nombre para un dinosaurio");
+         var peso_dino=parseFloat(
+                prompt("Ingresa el peso de dinosaurio en libras"));
+         var longitud_dino=parseFloat(
+                prompt("Ingresa el longitud de dinosaurio en pies"));
+         var peso_kg= peso_dino*0.453592;
+         var longitud_mts=longitud_dino*0.3048;
+
+         alert("El dinosaurio "+nombre_dino+"\n"+"tiene un peso en kilogramos de "+
+               peso_kg+"\n"+"y una longitud en metros de: "+longitud_mts);
+
+  	</script>
+        <br><br><a href="basicos.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

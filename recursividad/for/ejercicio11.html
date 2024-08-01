@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS Boostrap -->
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css?a=8">
+	<title>Fabrica de focos</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var foco_verde = 0;
+		var foco_blanco = 0;
+		var foco_rojo = 0;
+
+		var lote = parseInt(prompt("Ingresa la cantidad de focos del lote: "));
+
+		for (var existencia = 1; existencia <= lote; existencia++) {
+			color = parseInt(prompt("Selecciones el color de cada foco del lote: 1.- Verde | 2.- Blanco | 3.- Rojo"));
+			if (color == 1) {
+				foco_verde = foco_verde + 1;
+			}
+			if (color == 2) {
+				foco_blanco = foco_blanco + 1;
+			}
+			if (color == 3) {
+				foco_rojo = foco_rojo + 1;
+			}
+		}
+
+		document.write("Focos verdes: "+foco_verde+"<br>"+"Focos blancos: "+foco_blanco+"<br>"+"Focos rojos: "+foco_rojo);
+
+		// setTimeout(function(){
+		// window.location.href="../index.php";
+		// },5000);
+	</script>
+
+	<br><br><a href="../recursividad.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS Boostrap -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css?a=8">
+	<title>Ejercicio 5</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var dia =  parseInt(prompt("Número de día (1-7): ")); 
+		var impuesto = 0;
+		var total = 0;
+		var dif = 0;
+
+		if(dia >= 1 && dia <=7 ) {
+
+			var turno = parseInt(prompt("Turno de día (Matutino 1 - Vespertieno 2): "));
+
+			if(turno >=1 && turno <=2) {
+				var tiempo = parseInt(prompt("Minutos hablados: "));
+				if(tiempo <= 5) {
+				total = tiempo * 1;
+				document.write("Por "+tiempo+" minutos hablados, el total a pagar es: $"+total+"<br>");
+				} else if (tiempo > 5 && tiempo<= 8) {
+				dif = tiempo - 5; 
+				total = 5 + (dif * 0.80);
+				document.write("Por "+tiempo+" minutos hablados, el total a pagar es: $"+total+"<br>");
+				} else if(tiempo > 8 && tiempo <= 10) {
+				dif = tiempo - 8; 
+				total = 7.40 + (dif * 0.70);
+				document.write("Por "+tiempo+" minutos hablados, el total a pagar es: $"+total+"<br>");
+		} else {
+				total = tiempo * 0.50;
+				document.write("Por "+tiempo+" minutos hablados, el total a pagar es: $"+total+"<br>");
+			}
+		
+		if(dia == 7) {
+			impuesto = total * 0.03;
+			total = total + impuesto;
+			document.write("Total con impuesto: $"+total);
+		} else if (dia >= 1 && dia <=6){
+			if(turno == 1) {
+				impuesto = total * 0.15;
+				total = total + impuesto;
+				document.write("Total con impuesto: $"+total);
+			}else {
+				impuesto = total * 0.10;
+				total = total + impuesto;
+				document.write("Total con impuesto: $"+total);
+			}
+			
+		}
+
+		} else {
+				document.write("Turno incorrecto");
+			}
+
+
+		
+		} else {
+			document.write("Número de día incorrecto")
+		}
+
+		// setTimeout(function(){
+		// window.location.href="../index.php";
+		// },5000);
+	</script>
+
+	<br><br><a href="seleccion.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

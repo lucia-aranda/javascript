@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS Boostrap -->
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css?a=8">
+	<title>Promedio de estaturas</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var reintentar ="si";
+		while(reintentar=="si"){
+
+
+		var prom=0;
+		var i=0;
+		var suma=0;
+		var personas=parseInt(prompt("Cantidad de personas"));
+		for(i=1;i<=personas;i++){
+            
+			var estatura=parseFloat(prompt("Estatura "+i+" : "));
+			if(estatura>0){
+			suma=suma+estatura;
+
+			prom=suma/personas;
+		   }else if(estutura<=0)
+			{
+				alert("No hay estura ingresada, intenta de nuevo ingresar las estaturas ");
+				break;
+			}
+		}
+         
+		if(prom>0){
+		alert("Promedio de estaturas: "+prom);
+		reintentar="no";
+		}
+
+	   	}
+		//    setTimeout(function(){
+		// window.location.href="../index.php";
+		// },5000);
+	</script>
+
+	<br><br><a href="../recursividad.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

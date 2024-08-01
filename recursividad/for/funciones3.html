@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS Boostrap -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css?a=8">
+	<title>Rombo</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var num_pisos = 8;
+		var i, j, m, t, s;
+
+		//punta
+		for (m = 1; m < 16; m++) {
+			s = "&nbsp";
+			for (t = 1; t < m + 1; t++) {
+				s = s + "&nbsp";
+			}
+		}
+		document.write(s+"*"+"<br>");
+
+		//arriba
+		for (i = 0; i < num_pisos; i++) {
+			i = i + 1;
+			for (j = 0; j < num_pisos - i - 1; j++) {
+				document.write("&nbsp&nbsp");
+			}
+			for (j = 0; j < i + 1; j++) {
+				document.write("&nbsp&nbsp*");
+			}
+			document.write("<br>");
+		}
+
+		//abajo
+		for (i = num_pisos - 2; i >= 0; i--) {
+			i = i - 1;
+			for (j = 0; j < num_pisos - i - 1; j++) {
+				document.write("&nbsp&nbsp");
+			}
+			for (j = 0; j < i + 1; j++) {
+				document.write("&nbsp&nbsp*");
+			}
+			document.write("<br>");
+		}
+
+		//cola
+		document.write(s+"*");
+
+		// setTimeout(function(){
+		// window.location.href="../index.php";
+		// },5000);
+	</script>
+
+	<br><br><a href="../../recursividad.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

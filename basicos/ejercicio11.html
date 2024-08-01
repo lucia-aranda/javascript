@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS Boostrap -->
+   <link rel="stylesheet" type="text/css" href="../css/bootstrap.css?a=8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejercicio 11</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		var a =2;
+		alert("Inserte los datos para el primer punto: ");
+		var x1 = parseInt(prompt("X: "));
+		var y1 = parseInt(prompt("Y: "));
+		alert("Inserte los datos para el segundo punto: ");
+		var x2 = parseInt(prompt("X: "));
+		var y2 = parseInt(prompt("Y: "));
+
+		var dist = Math.sqrt(Math.pow(x2-x1, a)+(Math.pow(y2-y1, a)));
+
+		alert("La distancia entre los puntos ("+x1+","+y1+") y ("+x2+","+y2+") es: "+dist);
+
+
+	</script>
+	 <br><br><a href="basicos.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

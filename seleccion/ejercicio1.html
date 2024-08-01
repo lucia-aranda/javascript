@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS Boostrap -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css?a=8">
+	<title>Lápices</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		var c_lapiz = parseInt(prompt("Indique la cantidad de lápices a comprar: ")); 
+		var costo = 0;
+
+		if(c_lapiz < 1000) {
+			costo = c_lapiz * 0.90;
+			document.write("La cantidad a pagar por "+c_lapiz+" lápices, es: "+costo);
+		} else {
+			costo = c_lapiz*0.85;
+			document.write("La cantidad a pagar por "+c_lapiz+" lápices, es: "+costo);
+		}
+
+		// setTimeout(function(){
+		// window.location.href="../index.php";
+		// },5000);
+		
+	</script>
+
+	<br><br><a href="seleccion.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

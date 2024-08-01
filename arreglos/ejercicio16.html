@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS Boostrap y Estilo -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css?a=8">
+	<title>Ejercicio 16</title>
+</head>
+<body>
+	<h1>Ejercicio #16</h1>
+	<script type="text/javascript">
+		var temp=0;
+ 		var numeros = new Array(10);
+       
+       for(var x=0;x<numeros.length;x++)
+        {
+             numeros[x]=parseInt(Math.random()*100);
+
+        }
+       document.write("El orden actual de tu arreglo es: "+"<br>");
+        for(var x=0;x<numeros.length;x++)
+        {
+            document.write(numeros[x]+"<br>");
+        }
+    
+       for(var j=0;j<numeros.length-1;j++){
+           
+           for(var a=0;a<numeros.length-1;a++){
+               if(numeros[a]>numeros[a+1]){
+                   temp=numeros[a];
+                   numeros[a]=numeros[a+1];
+                   numeros[a+1]=temp;
+               }
+           }  
+       }
+       
+       document.write("El arreglo ordenado ahora es: "+"<br>");
+        for(var x=0;x<numeros.length;x++)
+        {
+            document.write(numeros[x]+"<br>");
+        }
+       
+
+
+	
+	</script>
+
+    <br><br><a href="arreglos.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

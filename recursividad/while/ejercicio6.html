@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS Boostrap -->
+  <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css?a=8">
+	<title>Sueldos</title>
+</head>
+<body>
+	<script type="text/javascript">
+	    var i=1;
+        var sueldo=0;
+        var total_sueldos=0;
+        var cantidad_empleados=parseInt(prompt("Ingresa la cantidad de empleados"));
+      while (i<=cantidad_empleados)
+      {   var SH=0;
+          var SS=0;
+          var j=1;
+          
+          var DT=parseInt(prompt("Ingresa la cantidad de dias laborados por empleado "+i));
+          var PH=parseFloat(prompt("Ingresa el pago por hora del empleado" ));
+           while (j<=DT){
+                  var HT=parseInt(prompt("Ingresa la cantidad de horas laborados del dia "+j));
+                   SH=SH+HT;//suma horas semanales
+                   j++;
+                  }
+           SS=SH*PH;
+           total_sueldos=total_sueldos+SS;
+           document.write("El sueldo de la semana del empleado "+i+" es: $"+SS+"<br>");
+          i++;
+      }
+      document.write("Lo que la empresa pago por el total de "+cantidad_empleados
+              +" empleados fue de $"+total_sueldos );
+
+  //             setTimeout(function(){
+		// window.location.href="../index.php";
+		// },5000);
+	</script>
+
+  <br><br><a href="../recursividad.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

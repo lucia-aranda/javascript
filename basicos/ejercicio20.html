@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- CSS Boostrap -->
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css?a=8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejercicio 20</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		var vvp = parseFloat(prompt("Ingrese el valor de venta de un producto: "));
+
+		var pcm = (100-45);
+		var pvp = (vvp/pcm)*100;
+		var imp = (pvp*0.16);
+
+		alert("El precio de venta es: "+pvp+"\n"+"El impuesto es: "+imp);
+
+	</script>
+	<br><br><a href="basicos.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

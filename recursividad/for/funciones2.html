@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS Boostrap -->
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css?a=8">
+	<title>Serie de números</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var i = 0;
+
+    	for (var num = 1; num <= 7; num++) {
+      		if (num > 4) {
+        		i = (num - 4) * 2;
+      		}
+
+      		for (var j = 1; j <= num - i; j++) {
+        		document.write(j+"&nbsp&nbsp&nbsp&nbsp&nbsp");
+      		}
+      		document.write("<br>");
+    	}
+		// setTimeout(function(){
+		// window.location.href="../index.php";
+		// },5000);
+	</script>
+
+	<br><br><a href="../recursividad.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

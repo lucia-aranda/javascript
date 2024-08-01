@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS Boostrap -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css?a=8">
+	<title>Ejercicio 11</title>
+</head>
+<body>
+	<script type="text/javascript">
+		 
+		 var tipo = parseInt(prompt("Para realizar el cálculo por antiguedad, presione 1."+"\n"+"Para realizar el cálculo de acuerdo al sueldo, presione 2."));
+
+		 if(tipo != 1 && tipo != 2) {
+		 	document.write("Opción no válida");
+		 } else {
+		 	if( tipo == 1) {
+		 		var antiguedad = parseInt(prompt("Ingrese su antigüedad en años: "));
+
+		 		if(antiguedad > 2 && antiguedad < 5) {
+		 			document.write("Su bono será por el 20% sobre tu sueldo.");
+		 		} else if(antiguedad >= 5) {
+		 			document.write("Su bono será por el 30% sobre tu sueldo.");
+		 		} else {
+		 			document.write("Su antigüedad no es válida para dar un bono por este criterio.");
+		 		}
+		 	} else {
+		 		var sueldo = parseFloat(prompt("Ingrese su sueldo: "));
+		 		if(sueldo > 3500) {
+		 			document.write("Su bono es por el 10% sobre su sueldo.");
+		 		} else if( sueldo > 1000 && sueldo <= 3500) {
+		 			document.write("Su bono es por el 15% sobre su sueldo.");
+		 		} else {
+		 			document.write("Su bono es por el 25% sobre su sueldo.");
+		 		}
+		 	}
+
+		 }
+
+		//  setTimeout(function(){
+		// window.location.href="../index.php";
+		// },5000);
+
+	</script>
+	
+	<br><br><a href="seleccion.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

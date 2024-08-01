@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS Boostrap -->
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css?a=8">
+	<title>Examen 1</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var letras = [];
+		var nom = prompt("Escribe tu primer nombre y apellido: ");
+		var nombre = nom.toString();
+
+		for (var i = 0; i < nombre; i++) {
+        	letras.push(nombre.charAt(i));
+        }
+        document.write(letras[0]);
+
+		// setTimeout(function(){
+		// window.location.href="../index.php";
+		// },5000);
+	</script>
+
+	<br><br><a href="../recursividad.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

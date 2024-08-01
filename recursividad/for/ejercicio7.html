@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS Boostrap -->
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css?a=8">
+  <title>Sucursales</title>
+</head>
+<body>
+  <script type="text/javascript">
+     var ciudades=parseInt(prompt("Ingresa la cantidad de ciudades"));
+        
+        var suma_v_dia=0;
+        for (var i=1;i<=ciudades;i++){
+          var tiendas=parseFloat(prompt("Ingresa la cantidad de tiendas de la ciudad "+i+ " : "));
+             var suma_v_ciudad=0; 
+             for (var j=1;j<=tiendas;j++)
+                {
+                  var sum_ventas_tienda=0;
+                  var empleados=parseFloat(prompt("Ingresa la cantidad de empleados de la tienda "+ j+ ":"));
+                  for (var k=1;k<=empleados;k++){
+                    var venta=parseFloat(prompt("Ingresa lo que vendio el empleado: "+k+ " : "));  
+                   document.write("Lo que vendio el empleado "+k+" fue: $"+venta+"<br>");
+                    sum_ventas_tienda=sum_ventas_tienda+venta;
+ 
+                  }
+                   document.write("Lo que vendio la tienda "+j+" fue: $"+sum_ventas_tienda+"<br>");
+                  suma_v_ciudad=suma_v_ciudad+sum_ventas_tienda;
+                }
+              document.write("Lo que vendio en la ciudad "+i+" fue: $"+suma_v_ciudad+"<br>"+"<br>");
+             suma_v_dia=suma_v_dia+suma_v_ciudad;
+          }
+        document.write("Lo que vendio la cadena en solo dia fue: $"+suma_v_dia+"<br>");
+
+  //       setTimeout(function(){
+		// window.location.href="../index.php";
+		// },5000);
+  </script>
+
+    <br><br><a href="../recursividad.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

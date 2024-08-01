@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS Boostrap -->
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css?a=8">
+	<title>Ventas</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var i=1;
+		var suma_ma_1000=0;
+		var c_v_ma_1000=0;
+		var suma_ma_500=0;
+		var c_v_ma_500=0;
+		var suma_me_500=0;
+		var c_v_me_500=0;
+		var total_general=0;
+		var v_dia=parseInt(prompt("Cantidad de ventas en el día: "));
+		while(i<=v_dia){
+			var venta=parseFloat(prompt("Ingresa el valor de la venta "+i+ " :"));
+			if(venta>1000)
+			{
+				c_v_ma_1000++;
+				suma_ma_1000=suma_ma_1000+venta;
+			}
+			else if(venta>500 && venta<=1000)
+			{
+				c_v_ma_500++;
+				suma_ma_500=suma_ma_500+venta;
+			}
+			else if(venta<=500)
+			{
+				c_v_me_500++;
+				suma_me_500=suma_me_500+venta;
+			}
+			i++;
+		}
+		total_general=suma_ma_1000+suma_ma_500+suma_me_500;
+
+		document.write("La cantidad de ventas mayores a $1000 : "+c_v_ma_1000+" y el monto vendido en esa categoria fue: $"+suma_ma_1000+"<br>"+"Con las ventas que fueron mayores a $500 pero menores o iguales a $1000 la cantidad de ellas fue: "+c_v_ma_500+" y el monto vendido en esa categoria fue $"+suma_ma_500+"<br>"+"Con las ventas que fueron menores o iguales a $500 la cantidad de ellas fue: "+c_v_me_500+" y el monto vendido en esa categoria fue $"+suma_me_500+"<br>"+"Y el monto total global de ventas durante el dia fue: "+total_general);
+
+		// setTimeout(function(){
+		// window.location.href="../index.php";
+		// },5000);
+	</script>
+
+	<br><br><a href="../recursividad.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

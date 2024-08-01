@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS Boostrap -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css?a=8">
+	<title>Ejercicio 4</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var alumnos = parseInt(prompt("Cantidad de alumnos: ")); 
+		var total_pago = 0;
+		if(alumnos >= 100) {
+			total_pago = alumnos * 65;
+			document.write("Cantidad de alumnos: "+alumnos+"<br>");
+		    document.write("Costo total del viaje: "+total_pago)
+		} else if(alumnos >= 50 && alumnos <= 99) {
+			total_pago = alumnos * 70;
+			document.write("Cantidad de alumnos: "+alumnos+"<br>");
+		    document.write("Costo total del viaje: "+total_pago)
+		} else if(alumnos >= 30 && alumnos <= 49) {
+			total_pago = alumnos * 95;
+			document.write("Cantidad de alumnos: "+alumnos+"<br>");
+		    document.write("Costo total del viaje: "+total_pago)
+		} else {
+			document.write("El costo del viaje por la renta del autobús es de $4,500.00");
+		}
+
+		// setTimeout(function(){
+		// window.location.href="../index.php";
+		// },5000);
+	</script>
+
+	<br><br><a href="seleccion.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

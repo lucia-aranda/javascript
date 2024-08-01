@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS Boostrap -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css?a=8">
+	<title>Ejercicio 3</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var personas = parseInt(prompt("Cantidad de personas: "));
+		var total_pago = 0;
+
+		if(personas > 300) {
+			total_pago = personas * 75;
+		} else if(personas > 200 && personas <= 300) {
+			total_pago = personas * 85;
+		} else {
+			total_pago = personas * 95;
+		}
+
+		document.write("Cantidad de personas: "+personas+"<br>");
+		document.write("Total a pagar: "+total_pago);
+
+		// setTimeout(function(){
+		// window.location.href="../index.php";
+		// },5000);
+	</script>
+
+	<br><br><a href="seleccion.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

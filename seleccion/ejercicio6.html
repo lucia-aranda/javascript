@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS Boostrap -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css?a=8">
+	<title>Ejercicio 6</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		var tipoh = parseInt(prompt("Tipo de hamburguesa. 1.- Sencilla, 2.- Doble, 3.- Triple: "));
+		var hamb = parseInt(prompt("Cantidad de hamburguesas: "));
+		var tipop = parseInt(prompt("¿Pago con tarjeta de crédito? (Si - 1, No -2)"));
+		var cargo = 0;
+		var totalph = 0;
+		var totalp = 0;
+
+		if(tipoh == 3) {
+			totalph = hamb * 28;
+		} else if(tipoh == 2){
+			totalph = hamb * 25;
+		} else if(tipoh == 1){
+			totalph = hamb * 20;
+		} else {
+			
+		}
+
+		if(tipop == 1) {
+			cargo = totalph * 0.05;
+			totalp = cargo + totalph;
+			document.write("Total  sin cargo: $"+totalph+"<br>");
+			document.write("Total a pagar con cargo: $"+totalp);
+		} else if(tipop == 2){
+			document.write("Total  a pagar: $"+totalph);
+		} else {
+			document.write("Tipo de pago incorrecto.");
+		}
+
+		// setTimeout(function(){
+		// window.location.href="../index.php";
+		// },5000);
+
+	</script>
+
+	<br><br><a href="seleccion.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS Boostrap -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css?a=8">
+	<title>Ejercicio 10</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var edad = parseInt(prompt("Ingrese la edad del estudiante: "));
+		var promedio = parseInt(prompt("Ingrese el promedio: "));
+
+		if(edad > 18) {
+			if(promedio >= 9) {
+				document.write("Beca por $2,000.00");
+			} else if(promedio >= 7.5 && promedio < 9) {
+				document.write("Beca por $1000.00");
+			} else if(promedio >= 6 && promedio < 7.5){
+				document.write("Beca por $500.00");
+			} else {
+				document.write("Recibirás una carta de invitación");
+			}
+		} else {
+			if(promedio >= 9) {
+				document.write("Beca por $3000.00");
+			}  else if(promedio >= 8 && promedio < 9) {
+				document.write("Beca por $2000.00");
+			} else if(promedio >= 6 && promedio < 8) {
+				document.write("Beca por $1000.00");
+			} else {
+				document.write("Recibirás una carta de invitación");
+			}
+		}
+		// setTimeout(function(){
+		// window.location.href="../index.php";
+		// },5000);
+	</script>
+
+	<br><br><a href="seleccion.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

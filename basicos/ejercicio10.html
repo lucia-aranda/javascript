@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS Boostrap -->
+   <link rel="stylesheet" type="text/css" href="../css/bootstrap.css?a=8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejercicio 10</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		var l1 = parseInt(prompt("Capture la longitud del primer lado: "));
+		var l2 = parseInt(prompt("Capture la longitud del segundo lado: "));
+		var l3 = parseInt(prompt("Capture la longitud del tercer lado: "));
+
+		var s = (l1+l2+l3)/2;
+		var ar = Math.sqrt(s*(s-l1)*(s-l2)*(s-l3));
+
+		alert("El área del trinangulo es: "+ar);
+
+
+	</script>
+	 <br><br><a href="basicos.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

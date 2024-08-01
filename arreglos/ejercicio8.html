@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS Boostrap y Estilo -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css?a=8">
+	<title>Ejercicio 8</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+        var i = 0, j = 0, num_a = 0, num_b = 0, s = 0;
+        var A = new Array(4);
+        var B = new Array(4);
+        
+        //Ingreso de números en el arreglo A
+        alert("Ingresa los primeros 4 numeros");
+        for(i = 0; i < 4; i++){
+        	num_a = parseInt(prompt("Ingresa el numero "+(i + 1)+": "));
+            var a = null;
+            
+            //Validación de no repetir números al agregar
+            for (j = 0; j < i; j++) {
+                if (num_a == A[j]) {
+                    a = j;
+                }
+            }
+            
+            if (a == null) {
+                A[i] = num_a;
+            } else {
+                alert("El numero "+num_a+" esta siendo repetido");
+                i--;
+            }
+            //Fin validación
+        }
+        //Fin A
+        
+        //Ingreso de números en el arreglo B
+        alert("Ingresa los otros 4 numeros");
+        for(i = 0; i < 4; i++){
+            num_b = parseInt(prompt("Ingresa el numero "+(i + 1)+": "));
+            var b = null;
+            
+            //Validación de no repetir números al agregar
+            for (j = 0; j < i; j++) {
+                if (num_b == B[j]) {
+                    b = j;
+                }
+            }
+            
+            if (b == null) {
+                B[i] = num_b;
+            } else {
+                alert("El numero "+num_b+" esta siendo repetido");
+                i--;
+            }
+            //Fin validación
+        }
+        //Fin B
+        
+        //Resultado de números que coinciden entre los arreglos A y B
+        for (i = 0; i < 4; i++) {
+            for (j = 0; j < 4; j++) {
+                if (A[i] == B[j]) {
+                   document.write("El numero "+A[i]+" de 'A' se encuentra tambien en 'B'"+"<br>");
+                }
+            }
+        }
+        //Fin del resultado
+	</script>
+
+    <br><br><a href="arreglos.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

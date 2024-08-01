@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<!-- CSS Boostrap -->
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css?a=8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejercicio 18</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		var radio = parseFloat(prompt("Ingrese el radio de un cono: "));
+		var generatriz = parseFloat(prompt("Ingrese la generatríz de un cono: "));
+		var altura = parseFloat(prompt("Ingrese la altura de un cono: "));
+		var a = 2; 
+		var div = 0.33333;
+
+		var r = Math.pow(radio, a);
+		var area_b = (r*3.141592);
+		var area_l = (3.141592*radio*generatriz);
+		var area = (area_b+area_l);
+		var vol = (div*area_b)*altura;
+
+		alert("El área de la base del cono es: "+area_b+"\n"+"El área de la lateral del cono es: "+area_l+"\n"+"El área total del cono es: "+area+"\n"+"El volumen del cono es: "+vol);
+
+	
+	</script>
+	<br><br><a href="basicos.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- CSS Boostrap -->
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css?a=8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejercicio 28</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var a=parseInt(prompt("Captura el primer número: "));
+		var b=parseInt(prompt("Captura el segundo número "));
+		var c=parseInt(prompt("Captura el tercer número "));
+		var d=parseInt(prompt("Captura el cuarto número "));
+
+		var total=a+b+c+d;
+		var pp=(a*100)/total;
+		var sp=(b*100)/total;
+		var tp=(c*100)/total;
+		var cp=(d*100)/total;
+
+		document.write("Total: "+total+"<br>");
+		document.write(a+" corresponde al "+pp+"%"+"<br>");
+		document.write(b+" corresponde al "+sp+"%"+"<br>");
+		document.write(c+" corresponde al "+tp+"%"+"<br>");
+		document.write(d+" corresponde al "+cp+"%");
+
+	</script>
+	<br><br><a href="basicos.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>

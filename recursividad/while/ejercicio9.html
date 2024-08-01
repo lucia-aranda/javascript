@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS Boostrap -->
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css?a=8">
+	<title>El Naufrago Satisfecho</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var tot_pag = 0;
+		var tot = 0;
+		var cargo = 0;
+
+		var cant_hamb = parseInt(prompt("Cuantas hamburguesas desea pedir: "));
+
+		while (cant_hamb > 0) {
+			var tip_hamb = parseInt(prompt("Selecciona el tipo de hamburguesa: 1.- Sencilla | 2.- Doble | 3.- Triple"));
+			if (tip_hamb >= 1 && tip_hamb <= 3) {
+                if (tip_hamb == 1) {
+                    tot = tot + 20;
+                } else {
+                    if (tip_hamb == 2) {
+                        tot = tot + 25;
+                    } else {
+                        tot = tot + 28;
+                    }
+                }
+            }
+            cant_hamb = cant_hamb - 1;
+		}
+
+		var metod_pag = parseInt(prompt("Como desea pagar: 1.- Tarjeta de credito | 2.- Efectivo"));
+		if (metod_pag == 1) {
+            cargo = tot * 0.05;
+            tot_pag = tot + cargo;
+            document.write("El total a pagar con un cargo del 5% es de: $"+tot_pag);
+        } else if (metod_pag == 2) {
+            document.write("El total a pagar es de: $"+tot);
+        }
+  //       setTimeout(function(){
+		// window.location.href="../index.php";
+		// },5000);
+	</script>
+
+	<br><br><a href="../recursividad.php"><button type="button" class="btn btn-success">Regresar</button></a>
+</body>
+</html>
