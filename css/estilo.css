@@ -2,9 +2,9 @@
 
 body {
 	font-family: 'DM Sans', sans-serif;
-    background-image: url("../img/2024.jpg");
+    background-color: rgb(209, 209, 209);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;    
 }
 
 .grid{
@@ -23,19 +23,19 @@ button {
 }
 
 .navbar {
-    background-color: white;
+    background-color: rgb(57, 57, 57);
 }
 
 .navbar a{
-    color: black;
+    color: rgb(247, 247, 247);
 }
 
 .navbar a:hover{
-    color: gray;
+    color: rgb(168, 167, 167);
 }
 
 .color {
-    color: #FFFFFF;
+    color: #323232;
 }
 
 .margen {
@@ -73,7 +73,7 @@ figure {
     text-align: center;
     transition: all 0.25s;
     float: left;
-    background-color: #008C4B;
+    background-color: #218b82 ;
 }
 
 .container .card:hover {
@@ -86,32 +86,34 @@ figure {
     height: 200px;
 }
 
+/* botones */
 .btn-gift {
   color: #fff;
-  background-color: #B60000;
-  border-color: #B60000;
+  background-color: #393939;
+  border-color: #393939;
 }
 .btn-gift:hover {
   color: #fff;
-  background-color: #970000;
-  border-color: #970000;
+  background-color: #262626;
+  border-color: #262626;
 }
 .btn-check:focus + .btn-gift, .btn-gift:focus {
   color: #fff;
-  background-color: #9D0000;
-  border-color: #970000;
-  box-shadow: 0 0 0 0.25rem rgba(205, 0, 0, 0.5);
+  background-color: #262626;
+  border-color: #262626;
+  box-shadow: 0 0 0 0.25rem rgba(77, 77, 77, 0.5);
 }
 .btn-check:checked + .btn-gift, .btn-check:active + .btn-gift, .btn-gift:active, .btn-gift.active, .show > .btn-gift.dropdown-toggle {
   color: #fff;
-  background-color: #9D0000;
-  border-color: #970000;
+  background-color: #262626;
+  border-color: #262626;
 }
 .btn-check:checked + .btn-gift:focus, .btn-check:active + .btn-gift:focus, .btn-gift:active:focus, .btn-gift.active:focus, .show > .btn-gift.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(205, 0, 0, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(77, 77, 77, 0.5);
 }
 .btn-gift:disabled, .btn-gift.disabled {
   color: #fff;
-  background-color: #B60000;
-  border-color: #B60000;
+  background-color: #393939;
+  border-color: #393939;
 }
+/* botones */
