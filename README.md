@@ -9,7 +9,7 @@
 
 | #   | Section                                                                                                                              |
 | --- | -------------------------------------------------------------------------------------------------------------------------------------|
-| ⭐   | [Menu](https://lucia-aranda.github.io/javascript/): Welcoming and overview.                                                        |
+| ⭐   | [Menu](https://lucia-aranda.github.io/javascript/): Option panel.                                                                  |
 | 📗   | [Basic](https://lucia-aranda.github.io/javascript/basicos/basicos.html): Basic excercises.                                         |
 | 💫   | [Recursivity](https://lucia-aranda.github.io/javascript/recursividad/recursividad.html): Recursive excercises.                     |
 | 🗂️   | [Selection](https://lucia-aranda.github.io/javascript/seleccion/seleccion.html): Seleciton excercises.                             |
