@@ -1,27 +1,28 @@
 { 
     "start_url": "/",
-    "short_name": "Lucía Aranda",  
-    "name": "Portafolio Web de Lucía Aranda",  
-    "description": "Portafolio web de Lucía Aranda (LCAG), desarrolladora de software multiplataforma.",  
+    "short_name": "JavaScript Excercises",  
+    "name": "JavaSript School Project Portfolio",  
+    "description": "Basic Javascript recursive code to solving math problems.",  
     "background_color": "#000000",  
     "theme_color": "#000000",  
     "orientation": "portrait",  
     "display": "standalone",  
     "icons":[
       {  
-        "src": "img/lcag_1.png",  
+        "src": "img/js_1.png",  
         "type": "image/png",  
         "sizes": "192x192"
       },
       {
-        "src": "img/lcag_2.png",  
+        "src": "img/js_2.png",  
         "type": "image/png",  
         "sizes": "144x144"
       },
       {
-        "src": "img/lcag_3.png",  
+        "src": "img/js_3.png",  
         "type": "image/png",  
         "sizes": "48x48"
       }
     ] 
+
   }
