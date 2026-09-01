@@ -1,7 +1,7 @@
 <div align="center">
   <br>
   <img alt="js" src="img/js-3d.webp" width="150px">
-  <h1>⚙️ JavaScript Portfolio ⚙️</h1>
+  <h1>⚙️ IteraMath ⚙️</h1>
   <strong>A project made with my school mates about <a href="https://lucia-aranda.github.io/javascript/">javascript operations</a> with algorithms.</strong>
 </div>
 
